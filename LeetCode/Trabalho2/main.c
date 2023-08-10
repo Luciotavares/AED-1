@@ -102,8 +102,8 @@ int countStudents(int* alunos, int alunosSize, int* sanduiches, int sanduichesSi
     return alunosIncapazesDeComer;
 }
 int main() {
-    int alunos[] = {1,1,1,0,0,1};
-    int sanduiches[] = {1,0,0,0,1,1};
+    int alunos[] = {1,1,0,0};
+    int sanduiches[] = {0,1,0,1};
     /*esse funçao para pegar o tamanho tive que pesquisar e pegar na internet*/
     int alunosSize = sizeof(alunos) / sizeof(alunos[0]);
     int sanduichesSize = sizeof(sanduiches) / sizeof(sanduiches[0]);
