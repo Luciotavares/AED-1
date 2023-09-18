@@ -27,26 +27,26 @@ int *topKFrequent(int *nums, int numsSize, int k, int *returnSize) {
     res[i] = freq[i];
   }
 
-  // Set the return size to j and return the result array
+  
   *returnSize = j;
   return res;
  
 }
 int main() {
-  // Initialize the input array and variables
+
   int nums[] = {1, 1, 1, 2, 2, 3};
   int numsSize = sizeof(nums) / sizeof(nums[0]);
   int k = 2;
   int returnSize;
 
-  // Call the topKFrequent function
+ 
   int *res = topKFrequent(nums, numsSize, k, &returnSize);
 
   for (int i = 0; i < returnSize; i++) {
     printf("%d\n", res[i]);
   }
 
-  // Free the allocated memory
+  
   free(res);
   
   return 0;
